@@ -1,0 +1,16 @@
+Started GET "/" for ::1 at 2021-12-28 09:36:17 -0600
+
+ActiveRecord::NoDatabaseError - connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "benchbnb_development" does not exist:
+
+Started POST "/__better_errors/891e1f8ba2a1fef4/variables" for ::1 at 2021-12-28 09:36:17 -0600
+  [1m[35m (478.6ms)[0m  [1m[35mCREATE DATABASE "benchbnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (75.5ms)[0m  [1m[35mCREATE DATABASE "benchbnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-12-28 09:38:23 -0600
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html within layouts/application
+  Rendered static_pages/root.html within layouts/application (1.7ms)
+Completed 200 OK in 1306ms (Views: 1304.2ms | ActiveRecord: 0.0ms)
+
+
