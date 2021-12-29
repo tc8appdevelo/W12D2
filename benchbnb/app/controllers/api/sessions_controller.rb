@@ -12,13 +12,11 @@ class SessionsController < ApplicationController
             flash.now[:errors] = ['activate account first']
         else
             login_user!(user)
-            puts "login_user!"
         end
     end
 
     def destroy
         current_user.reset_session_token!
         session[:session_token] = nil
-        puts "destroy in session ran"
     end
 end

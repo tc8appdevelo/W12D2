@@ -1,5 +1,6 @@
 class Api::UsersController < ApplicationController
 
+
     def create
         @user = User.new(user_params)
         if @user.save
@@ -17,7 +18,6 @@ class Api::UsersController < ApplicationController
         @user.activate!
         login_user!(@user)
         flash[:notice] = 'Successfully logged in'
-        puts "logged in activate ran"
     end
 
     def user_params
